@@ -1,0 +1,63 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+testme{
+  color: #777;
+}
+
+footer {
+     font-size: 0.9em;
+}
+
+
+
+/* -----------div tips------------- */
+
+  div.source, div.quote, div.fact, div.def, div.point, div.question, div.write {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 100px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+
+    min-height: 120px;
+    color: black;
+    background-color: #D3D3D3;
+    border: solid 5px #696969;
+  }
+  
+div.source {
+  background-image: url("img/source.png");
+}
+
+div.quote {
+  background-image: url("img/quote.png");
+
+}
+
+div.fact {background-image: url("img/fun-fact.png");}
+
+div.def {background-image: url("img/def.png");}
+
+div.point {background-image: url("img/point.png");}
+
+div.question {background-image: url("img/question.png");}
+
+div.write {background-image: url("img/write.png");}
+
+
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
