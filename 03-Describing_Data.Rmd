@@ -9,10 +9,6 @@ Average a left-hander with a right-hander and what do you get?<br>
 This chapter is adapted from Matthew Crump's **Descriptive Statistics** chapter in "Answering Questions with Data." https://www.crumplab.com/statistics/
 :::
 
-:::fact
-Testing the fun fact box. Find some fun facts above descriptives from UNBOUND Gravel.
-:::
-
 This chapter is about **descriptive statistics**. These are tools for summarizing data. Some things to keep in mind as we go along are:
 
   1. Describing data is necessary. Usually, we have way more information than we can process without summarizing into smaller, bite-sized chunks.
