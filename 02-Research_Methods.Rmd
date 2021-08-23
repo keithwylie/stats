@@ -1,8 +1,8 @@
 # Research Design {#ResearchDesign}
 
 :::quote
-While it is easy to lie with statistics, it is even easier to lie without them.
-`r tufte::quote_footer('--- attributed to Federeick Mostellar by Charles Murray in *How to Accuse the Other Guy of Lying with Statistics* (2005).')`
+Extraordinary claims require extraordinary evidence.
+`r tufte::quote_footer('--- Carl Sagan, *Cosmos: A Personal Voyage* (1980)')`
 :::
 
 :::source

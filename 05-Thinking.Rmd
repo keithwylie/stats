@@ -1,6 +1,6 @@
 # Thinking About Answering Questions with Data
 
-```{r}
+```{r echo=F}
 library(ggplot2)
 library(dplyr)
 ```

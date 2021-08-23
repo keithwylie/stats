@@ -344,6 +344,10 @@ Switching gears a bit, consider these numbers:
 
 Here, the mode is 1, because there are two 1s, and all of the other numbers occur once. But, are most of the numbers like a 1? No, they are mostly not 1s. Although the mode can certainly be useful---especially when we are dealing with categorical variables---it is not always the most informative measure of central tendency.
 
+:::point
+When you have categories or other nominal data, the **mode** is a good measure of central tendency.
+:::
+
 ### Median
 
 The **median** is the exact middle of the data. After all, we are asking about central tendency, so why not go to the center of the data and see where we are. What do you mean middle of the data? Let's look at these numbers:
