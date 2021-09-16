@@ -593,3 +593,6 @@ legal-psychology-criminology
 health-psychology-nursing
 probability
 frequentist-probability
+binomial-distribution
+what-is-the-binomial
+normal-distribution
