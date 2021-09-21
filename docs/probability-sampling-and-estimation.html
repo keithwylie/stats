@@ -1239,12 +1239,12 @@ Figure 4.12: The population distribution of IQ scores (panel a) and two samples 
 <h2><span class="header-section-number">4.9</span> The law of large numbers</h2>
 <p>We just looked at the results of one fictitious IQ experiment with a sample size of <span class="math inline">\(N=100\)</span>. The results were somewhat encouraging: the true population mean is 100, and the sample mean of 98.5 is a pretty reasonable approximation to it. In many scientific studies that level of precision is perfectly acceptable, but in other situations you need to be a lot more precise. If we want our sample statistics to be much closer to the population parameters, what can we do about it?</p>
 <p>The obvious answer is to collect more data. Suppose that we ran a much larger experiment, this time measuring the IQ’s of 10,000 people. I’ll simulate some fake IQ scores, and display the first 100 of those scores below:</p>
-<pre><code>##   [1] 109  88 103 105 111  77 121 107 101 105 100  92 108  81 114  94  91 101
-##  [19]  92  87 104 110  81  76  94  87 130 130  96 127 113  83  66  85 126  99
-##  [37] 115 112 108  75  75 105  98  92 105  69  93  92 117 106  96  94  95  98
-##  [55]  84  80  79  96 109  99  82  99  92 116 104 106 105  81  93  95 144 110
-##  [73]  84 104 104 107 108 106 109 108  94 106  94 113 138  99  74  90 113 117
-##  [91]  90  99 122 110 105 100 132  92  93  77</code></pre>
+<pre><code>##   [1]  83  93 111 125  87 113 113 108  94  67 104  90  92 105 117 115 132 111
+##  [19]  81 116  97 131  99 115 111  99  70 112 119 114  92  93  97 110  99  98
+##  [37] 112  74  73 107 113 116  85 113 116 111 101 120  84 120  94 117  77 112
+##  [55]  81  88 111 115 101 114  81 107  99  78 119 111  69  81  79  75  79  85
+##  [73] 103  93  78  74 103 120  93 105  90  76 128  79 118  70 109 122  92  78
+##  [91]  92 101  84 100  92  95  74 107  80 101</code></pre>
 <p>The histogram of this much larger sample is shown in Figure <a href="probability-sampling-and-estimation.html#fig:IQdist">4.12</a>c. Even a moment’s inspections makes clear that the larger sample is a much better approximation to the true population distribution than the smaller one. This is reflected in the sample statistics: the mean IQ for the larger sample turns out to be 99.9, and the standard deviation is 15.1. These values are now very close to the true population.</p>
 <p>I feel a bit silly saying this, but the thing I want you to take away from this is that large samples generally give you better information. I feel silly saying it because it’s so obvious that it shouldn’t need to be said. In fact, it’s such an obvious point that when Jacob Bernoulli – one of the founders of probability theory – formalized this idea back in 1713, he was kind of a jerk about it. Here’s how he described the fact that we all share this intuition:</p>
 <blockquote>
@@ -1494,7 +1494,7 @@ Figure 4.19: Illustration that the shape of the sampling distribution of the mea
 <span id="cb11-33"><a href="probability-sampling-and-estimation.html#cb11-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sample_size)<span class="sc">+</span><span class="fu">xlim</span>(<span class="dv">0</span>,<span class="dv">1</span>)<span class="sc">+</span></span>
 <span id="cb11-34"><a href="probability-sampling-and-estimation.html#cb11-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">&quot;Sampling distribution of mean </span><span class="sc">\n</span><span class="st"> for samples from exponential Distribution&quot;</span>)<span class="sc">+</span><span class="fu">ylab</span>(<span class="st">&quot;Rough likelihoods&quot;</span>)<span class="sc">+</span></span>
 <span id="cb11-35"><a href="probability-sampling-and-estimation.html#cb11-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;value&quot;</span>)</span></code></pre></div>
-<pre><code>## Warning: Removed 5 rows containing non-finite values (stat_bin).</code></pre>
+<pre><code>## Warning: Removed 3 rows containing non-finite values (stat_bin).</code></pre>
 <pre><code>## Warning: Removed 4 rows containing missing values (geom_bar).</code></pre>
 <div class="figure"><span id="fig:4samplemeanExp"></span>
 <img src="statistics_files/figure-html/4samplemeanExp-1.png" alt="Illustration that the shape of the sampling distribution of the mean is normal, even when the samples come from a non-normal (exponential in this case) distribution" width="672" />
@@ -1665,11 +1665,11 @@ Figure 4.22: A normal distribution. Each line represents a standard deviation fr
 <p>Put a little more mathematically:</p>
 <p><span class="math inline">\(z = \frac{{X} - \overline{X}}{s}\)</span></p>
 <p>So, for example if we had these 10 scores from a normal distribution with mean = 100, and standard deviation =25</p>
-<pre><code>##  [1] 132.47  83.55  82.11 150.77  93.15 100.89 152.86 106.04  63.13 102.22</code></pre>
+<pre><code>##  [1] 104.96  47.20  61.59 116.55 101.84  73.85  91.48  85.18 136.72  74.76</code></pre>
 <p>The <span class="math inline">\(z\)</span> scores would be:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="probability-sampling-and-estimation.html#cb18-1" aria-hidden="true" tabindex="-1"></a>(scores<span class="dv">-100</span>)<span class="sc">/</span><span class="dv">25</span></span></code></pre></div>
-<pre><code>##  [1]  1.2988 -0.6580 -0.7156  2.0308 -0.2740  0.0356  2.1144  0.2416 -1.4748
-## [10]  0.0888</code></pre>
+<pre><code>##  [1]  0.1984 -2.1120 -1.5364  0.6620  0.0736 -1.0460 -0.3408 -0.5928  1.4688
+## [10] -1.0096</code></pre>
 <p>Once you have the <span class="math inline">\(z\)</span> scores, you could use them as another way to describe your data. For example, now just by looking at a score you know if it is likely or unlikely to occur, because you know how the area under the normal curve works. <span class="math inline">\(z\)</span> scores between -1 and 1 happen pretty often, scores greater than 1 or -1 still happen fairly often, but not as often. And, scores bigger than 2 or -2 don’t happen very often. This is a convenient thing to do if you want to look at your numbers and get a general sense of how often they happen.</p>
 <p>Usually you do not know the mean or the standard deviation of the population that you are drawing your sample scores from. So, you could use the mean and standard deviation of your sample as an estimate, and then use those to calculate <span class="math inline">\(z\)</span> scores.</p>
 <p>Finally, <span class="math inline">\(z\)</span> scores are also called <strong>standardized scores</strong>, because each raw score is described in terms of it’s standard deviation. This may well be the last time we talk about <span class="math inline">\(z\)</span> scores in this book. You might wonder why we even bothered telling you about them. First, it’s worth knowing they are a thing. Second, they become important as your statistical prowess becomes more advanced. Third, some statistical concepts, like correlation, can (and will) be re-written in terms of <span class="math inline">\(z\)</span> scores, and this illuminates aspects of those statistics. Finally, they are super useful when you are dealing with a normal distribution that has a known mean and standard deviation.</p>

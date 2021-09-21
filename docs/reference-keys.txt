@@ -596,3 +596,5 @@ frequentist-probability
 binomial-distribution
 what-is-the-binomial
 normal-distribution
+fig:6flatp-1
+fig:6flatp-2
