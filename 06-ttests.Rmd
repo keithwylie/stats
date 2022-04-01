@@ -25,11 +25,11 @@ Enter William Sealy Gosset. Gosset figured out the solution to the problem. He a
 
 2. What's the fewest amount of samples I need to take to know the above, that would mean Guinness could test fewer beers for quality, sell more beers for profit, and make the product testing time shorter.
 
-Gosset solved those questions, and he invented something called the *Student's t-test*. Gosset was working for Guinness, and could be fired for releasing trade-secrets that he invented (the t-test). But, Gosset published the work anyways, under a pseudonym [@Student1908]. He called himself Student, hence Student's t-test. Now you know the rest of the story.
+Gosset solved those questions, and he invented something called the *Student's t test*. Gosset was working for Guinness, and could be fired for releasing trade-secrets that he invented (the t test). But, Gosset published the work anyways, under a pseudonym [@Student1908]. He called himself Student, hence Student's t test. Now you know the rest of the story.
 
-It turns out this was a very nice thing for Gosset to have done. t-tests are used all the time, and they are useful, that's why they are used. In this chapter we learn how they work.
+It turns out this was a very nice thing for Gosset to have done. t tests are used all the time to compare samples. In this chapter we learn how they work.
 
-You'll be surprised to learn that what we've already talked about, (the Crump Test, and the Randomization Test), are both very very similar to the t-test. So, in general, you have already been thinking about the things you need to think about to understand t-tests. You're probably wondering what is this $t$, what does $t$ mean? We will tell you. Before we tell what it means, we first tell you about one more idea.
+In general, you have already been thinking about the things you need to think about to understand t tests. You're probably wondering what is this $t$, what does $t$ mean? We will tell you. Before we tell what it means, we first tell you about one more idea.
 
 ## Check your confidence in your mean
 
